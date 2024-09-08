@@ -1,14 +1,14 @@
 import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
-
+import { useStateContext } from "../context/ContextProvider";
 import SparkLine from "../components/Charts/SparkLine";
 import Stacked from "../components/Charts/Stacked";
 import Button from "../components/Button";
 import { earningData, SparklineAreaData } from "../data/dummy";
 
 function Ecommerce() {
-  const currentColor = "blue";
+const {  currentColor} = useStateContext();
 
   return (
     <div className="mt-24">
@@ -97,12 +97,12 @@ function Ecommerce() {
               </div>
               <div className="mt-5">
                 <SparkLine
-                currentColor="blue"
+                currentColor={currentColor}
                 type="Line"
                 height="80px"
                 width="250px"
                 data={SparklineAreaData}
-                color="blue"
+                color={currentColor}
                 />
               </div>
               <div className="mt-10">
