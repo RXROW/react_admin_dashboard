@@ -20,28 +20,29 @@ function SparkLine({
   }
 
   return (
-    <SparklineComponent
-      id={id || "sparkline"}
-      height={height}
-      width={width}
-      lineWidth={1}
-      valueType="Numeric"
-      fill={color}
-      dataSource={data}
-      xName="x"
-      yName="y"
-      type={type}
-      border={{ color: currentColor, width: 2 }}
-      tooltipSettings={{
-        visible: true,
-        format: '\\${x} : \\${y}',  
-        trackLineSettings: {
-          visible: true,
-        },
-      }}
-    >
-      <Inject services={[SparklineTooltip]} />
-    </SparklineComponent>
+<SparklineComponent
+  id={id || "sparkline"}
+  height={height}
+  width={width}
+  lineWidth={1}
+  valueType="Numeric"
+  fill={color}
+  dataSource={data}
+  xName="x"
+  yName="y"
+  type={type}
+  border={{ color: currentColor, width: 2 }}
+  tooltipSettings={{
+    visible: true,
+    // eslint-disable-next-line no-template-curly-in-string
+    format: '${x} : ${y}',
+    trackLineSettings: {
+      visible: true,
+    },
+  }}
+>
+  <Inject services={[SparklineTooltip]} />
+</SparklineComponent>
   );
 }
 
