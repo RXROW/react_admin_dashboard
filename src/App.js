@@ -6,7 +6,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
  // Importing components directly
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+ 
 import Sidebar from "./components/Sidebar";
  
 
@@ -119,7 +119,7 @@ const App = () => {
 
               </Routes>
             </div>
-            <Footer />
+ 
           </div>
         </div>
       </BrowserRouter>
