@@ -45,7 +45,7 @@ const App = () => {
     setCurrentColor(currentThemeColor);
     setCurrentMode(currentThemeMode);
   }
-}, []);
+}, [setCurrentColor, setCurrentMode]);
 
  
   return (

@@ -33,9 +33,9 @@ const NavButton = ({ title, customFun, icon, color, dotColor }) => {
 
 const Navbar = () => {
   const {
-    activeMenu,
+ 
     setActiveMenu,
-    setIsClicked,
+ 
     isClicked,
     handleClick,
     screenSize,
@@ -51,7 +51,7 @@ const Navbar = () => {
     return () => {
     window.removeEventListener('resize',handleResize)
     };
-  }, []);
+  }, [setScreenSize]);
 
   useEffect(() => {
   if(screenSize<=900){
@@ -61,7 +61,7 @@ const Navbar = () => {
   }
     
      
-  }, [screenSize]);
+  }, [screenSize ,setActiveMenu]);
 
   return (
     <div className="flex items-center justify-between p-2 md:mx-6 relative">

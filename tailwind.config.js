@@ -39,7 +39,7 @@ module.exports = {
         590: '590px',
       },
       backgroundImage: {
-        'hero-pattern': "url('https://res.cloudinary.com/dyv3dluov/image/upload/fl_preserve_transparency/v1725283640/Contactus-pana_tqllt8.jpg?_s=public-apps')",
+        'hero-pattern': "url('https://res.cloudinary.com/dyv3dluov/image/upload/fl_preserve_transparency/v1725887508/Investment_data-bro_yiyxzp.jpg?_s=public-apps')",
       },
     },
   },

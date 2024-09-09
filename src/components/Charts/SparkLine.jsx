@@ -21,7 +21,7 @@ function SparkLine({
 
   return (
     <SparklineComponent
-    id={id || "sparkline"}
+      id={id || "sparkline"}
       height={height}
       width={width}
       lineWidth={1}
@@ -34,7 +34,7 @@ function SparkLine({
       border={{ color: currentColor, width: 2 }}
       tooltipSettings={{
         visible: true,
-        format: '${x} : ${y}',
+        format: '\\${x} : \\${y}',  
         trackLineSettings: {
           visible: true,
         },
@@ -46,3 +46,4 @@ function SparkLine({
 }
 
 export default SparkLine;
+
